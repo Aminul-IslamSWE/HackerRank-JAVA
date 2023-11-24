@@ -1,0 +1,15 @@
+import java. util.Scanner;
+
+public class ReadPrintIntegers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Reading integers until there's no input left
+        while (scanner.hasNextInt()) {
+            int number = scanner.next();
+            System.out.println(number);
+        }
+
+        scanner.close();
+    }
+}
